@@ -5,6 +5,7 @@
 	<title>LuxTraiding</title>
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans:regular,italic,700&subset=cyrillic-ext"
 		rel="stylesheet" />
+	<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
 	<link rel="stylesheet" href="css/style.css" />
 	<script src="./js/main.js" defer></script>
 	<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
@@ -12,11 +13,8 @@
 </head>
 
 <body>
-	<div class="arrow arrow-active"><span>
-			<p></p>
-
-		</span></div>
-	<header class="header">
+	<a href="#header" class="arrow arrow-active"><img src="img/arrowToTop/arrow.png" alt=""></a>
+	<header id="header" class="header">
 		<div class="header__container">
 			<div class="header__logo">
 				<div class="header__logo__hammer"><img src="img/header/shape_13_2208.png" alt=""></div>
@@ -37,11 +35,7 @@
 				<span></span>
 				<span></span>
 			</div>
-			<div class="header__region">
-				<div class="header__region__logo"><img src="img/header/globe_4097.png" alt=""></div>
-				<div class="header__region__text">Выбор Региона</div>
 
-			</div>
 			<div class="header__user user-menu">
 				<div class="user-menu__button"><img src="img/header/ellipse_20_3713.png" alt=""></div>
 				<div class="user-menu__arrows">
@@ -71,7 +65,9 @@
 				<h1 class="join__title title">Лоты под аукцион и свобоДную продажу</h1>
 				<div class="join__text">Мы собираем эксклюзивную публику и экслюзивные лоты, даем удобный и
 					автоматизированный сервис по покупке и продаже, а также выставлению лотов на аукцион, предоставляем
-					личные кабинеты, а также оказываем сопутствубщие услуги с продажей редких и дорогих вещей</div>
+					личные кабинеты, а также оказываем сопутствубщие услуги с продажей редких и дорогих вещей
+
+				</div>
 				<div class="join__button">
 					<div class="join__button__body  button"><span>Присоединиться</span> </div>
 				</div>
@@ -83,123 +79,416 @@
 			<div class="popular__container">
 				<div class="popular__subtitle subtitle">Популярные</div>
 				<h2 class="popular__title title">лоты Под аукцион</h2>
-				<div class="popular__decor decor"></div>
-				<div class="popular__slider">
-					<div class="popular__wrapper">
-						<div class="popular__card card">
-							<div class="card__image">
-								<img src="img/popular/rectangle_4_3190.png" alt="">
-								<div class="card__timer">
-									<div class="card__timer__body"> <img src="img/popular/rectangle_16_3283.png" alt="">
-										<br>
-										<span>00</span>:<span>00</span>:<span>00</span>:<span>00</span>
+				<div class="popular__decor decor">
+					<span></span> <img src="img/popular/logo.png" alt=""> <span></span>
+				</div>
+				<div class="popular__slider swiper">
+					<div class="popular__wrapper swiper-wrapper">
+						<div class="popular__card card swiper-slide">
+
+							<div class="card__body">
+								<div class="card__image">
+									<img src="img/popular/rectangle_4_3190.png" alt="">
+									<div class="card__timer">
+										<div class="card__timer__body"> <img src="img/popular/rectangle_16_3283.png"
+												alt="">
+											<br>
+											<span>00</span>:<span>00</span>:<span>00</span>:<span>00</span>
+										</div>
 									</div>
+								</div>
+
+								<div class="card__title">Arnold & Son Worldtimer discovery of antarctica
+								</div>
+								<div class="card__bid">
+									<div class="card__view"><span><img src="img/popular/eye.png" alt=""></span>
+										<p> 1098</p>
+									</div>
+									<div class="card__current">
+										<div class="card__current__body">
+											<p>Текущая ставка</p>
+											<span>18000000</span>
+											<p>o</p>
+										</div>
+									</div>
+									<div class="card__betting"><span><img src="img/popular/palm.png" alt=""></span>
+										<p>25</p>
+									</div>
+								</div>
+								<div class="card__button">
+									<div class="card__button__body button"><span>Поднять ставку</span></div>
 								</div>
 							</div>
 
-							<div class="card__title">Arnold & Son Worldtimer discovery of antarctica
-							</div>
-							<div class="card__bid">
-								<div class="card__view"><span></span>
-									<p> 1098</p>
-								</div>
-								<div class="card__current">
-									<div class="card__current__body">
-										<p>Текущая ставка</p>
-										<span>18000000</span>
-										<p>o</p>
-									</div>
-								</div>
-								<div class="card__betting"><span></span>
-									<p>25</p>
-								</div>
-							</div>
-							<div class="card__button">
-								<div class="card__button__body button"><span>Поднять ставку</span></div>
-							</div>
 						</div>
-						<div class="popular__card card">
-							<div class="card__image">
-								<img src="img/popular/rectangle_4_3317.png" alt="">
-								<div class="card__timer">
-									<div class="card__timer__body"> <img src="img/popular/rectangle_16_3283.png" alt="">
-										<br>
-										<span>00</span>:<span>00</span>:<span>00</span>:<span>00</span>
+						<div class="popular__card card swiper-slide">
+							<div class="card__body">
+								<div class="card__image">
+									<img src="img/popular/rectangle_4_3317.png" alt="">
+									<div class="card__timer">
+										<div class="card__timer__body"> <img src="img/popular/rectangle_16_3283.png"
+												alt="">
+											<br>
+											<span>00</span>:<span>00</span>:<span>00</span>:<span>00</span>
+										</div>
 									</div>
 								</div>
-							</div>
 
-							<div class="card__title">Chateau Lafite 1949
-							</div>
-							<div class="card__bid">
-								<div class="card__view"><span></span>
-									<p> 198</p>
+								<div class="card__title">Chateau Lafite 1949
 								</div>
-								<div class="card__current">
-									<div class="card__current__body">
-										<p>Текущая ставка</p>
-										<span>1855000</span>
-										<p>o</p>
+								<div class="card__bid">
+									<div class="card__view"><span><img src="img/popular/eye.png" alt=""></span>
+										<p> 198</p>
+									</div>
+									<div class="card__current">
+										<div class="card__current__body">
+											<p>Текущая ставка</p>
+											<span>1855000</span>
+											<p>o</p>
+										</div>
+									</div>
+									<div class="card__betting"><span><img src="img/popular/palm.png" alt=""></span>
+										<p>70</p>
 									</div>
 								</div>
-								<div class="card__betting"><span></span>
-									<p>70</p>
+								<div class="card__button">
+									<div class="card__button__body button"><span>Поднять ставку</span></div>
 								</div>
-							</div>
-							<div class="card__button">
-								<div class="card__button__body button"><span>Поднять ставку</span></div>
 							</div>
 						</div>
-						<div class="popular__card card">
-							<div class="card__image">
-								<img src="img/popular/rectangle_4_3236.png" alt="">
-								<div class="card__timer">
-									<div class="card__timer__body"> <img src="img/popular/rectangle_16_3283.png" alt="">
-										<br>
-										<span>00</span>:<span>00</span>:<span>00</span>:<span>00</span>
+						<div class="popular__card card swiper-slide">
+							<div class="card__body">
+								<div class="card__image">
+									<img src="img/popular/rectangle_4_3236.png" alt="">
+									<div class="card__timer">
+										<div class="card__timer__body"> <img src="img/popular/rectangle_16_3283.png"
+												alt="">
+											<br>
+											<span>00</span>:<span>00</span>:<span>00</span>:<span>00</span>
+										</div>
 									</div>
 								</div>
-							</div>
 
-							<div class="card__title">Rolex Paul Newman Daytona
-							</div>
-							<div class="card__bid">
-								<div class="card__view"><span></span>
-									<p>98</p>
+								<div class="card__title">Rolex Paul Newman Daytona
 								</div>
-								<div class="card__current">
-									<div class="card__current__body">
-										<p>Текущая ставка</p>
-										<span>500000</span>
-										<p>o</p>
+								<div class="card__bid">
+									<div class="card__view"><span><img src="img/popular/eye.png" alt=""></span>
+										<p>98</p>
+									</div>
+									<div class="card__current">
+										<div class="card__current__body">
+											<p>Текущая ставка</p>
+											<span>500000</span>
+											<p>o</p>
+										</div>
+									</div>
+									<div class="card__betting"><span><img src="img/popular/palm.png" alt=""></span>
+										<p>5</p>
 									</div>
 								</div>
-								<div class="card__betting"><span></span>
-									<p>5</p>
+								<div class="card__button">
+									<div class="card__button__body button"><span>Поднять ставку</span></div>
 								</div>
 							</div>
-							<div class="card__button">
-								<div class="card__button__body button"><span>Поднять ставку</span></div>
+						</div>
+						<div class="popular__card card swiper-slide">
+							<div class="card__body">
+								<div class="card__image">
+									<img src="img/popular/rectangle_16_0000.png" alt="">
+									<div class="card__timer">
+										<div class="card__timer__body"> <img src="img/popular/rectangle_16_3283.png"
+												alt="">
+											<br>
+											<span>00</span>:<span>00</span>:<span>00</span>:<span>00</span>
+										</div>
+									</div>
+								</div>
+
+								<div class="card__title">Ring My pleasure
+								</div>
+								<div class="card__bid">
+									<div class="card__view"><span><img src="img/popular/eye.png" alt=""></span>
+										<p>98</p>
+									</div>
+									<div class="card__current">
+										<div class="card__current__body">
+											<p>Текущая ставка</p>
+											<span>50000000</span>
+											<p>o</p>
+										</div>
+									</div>
+									<div class="card__betting"><span><img src="img/popular/palm.png" alt=""></span>
+										<p>5</p>
+									</div>
+								</div>
+								<div class="card__button">
+									<div class="card__button__body button"><span>Поднять ставку</span></div>
+								</div>
 							</div>
 						</div>
+
+					</div>
+					<div class="popular__control">
+						<div class="popular__left"><img src="img/popular/arrow1.png" alt=""></div>
+						<div class="popular__button">
+							Все лоты
+						</div>
+						<div class="popular__right"><img src="img/popular/arrow2.png" alt=""></div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+		<section class="categories">
+			<div class="categories__container">
+				<div class="categories__galery">
+					<div class="categories__card">
+						<div class="categories__card__img"><img src="img/category/layer_56_2681.png" alt=""></div>
+						<div class="categories__card__body">
+							<div class="categories__logo"><img src="img/category/ellipse_20_3748.png" alt=""></div>
+							<div class="categories__title">Часы</div>
+							<div class="categories__decor"> <span></span> </div>
+						</div>
+					</div>
+					<div class="categories__card">
+						<div class="categories__card__img"><img src="img/category/layer_57_2684.png" alt=""></div>
+						<div class="categories__card__body">
+							<div class="categories__logo"><img src="img/category/ellipse_20_3754.png" alt=""></div>
+							<div class="categories__title">Ювелирные изделия</div>
+							<div class="categories__decor"><span></span></div>
+						</div>
+					</div>
+					<div class="categories__card">
+						<div class="categories__card__img"><img src="img/category/layer_58_2686.png" alt=""></div>
+						<div class="categories__card__body">
+							<div class="categories__logo"><img src="img/category/ellipse_20_3760.png" alt=""></div>
+							<div class="categories__title">Автотранспорт и лодки</div>
+							<div class="categories__decor"><span></span></div>
+						</div>
+					</div>
+					<div class="categories__card">
+						<div class="categories__card__img"><img src="img/category/layer_59_2688.png" alt=""></div>
+						<div class="categories__card__body">
+							<div class="categories__logo"><img src="img/category/ellipse_20_3768.png" alt=""></div>
+							<div class="categories__title">Аксессуары</div>
+							<div class="categories__decor"><span></span></div>
+						</div>
+					</div>
+					<div class="categories__card">
+						<div class="categories__card__img"><img src="img/category/layer_60_2690.png" alt=""></div>
+						<div class="categories__card__body">
+							<div class="categories__logo"><img src="img/category/ellipse_20_3772.png" alt=""></div>
+							<div class="categories__title">Недвижимость</div>
+							<div class="categories__decor"><span></span></div>
+						</div>
+					</div>
+					<div class="categories__card">
+						<div class="categories__card__img"><img src="img/category/layer_61_2692.png" alt=""></div>
+						<div class="categories__card__body">
+							<div class="categories__logo"><img src="img/category/ellipse_20_3776.png" alt=""></div>
+							<div class="categories__title">HI-TECH</div>
+							<div class="categories__decor"><span></span></div>
+						</div>
+					</div>
+					<div class="categories__card">
+						<div class="categories__card__img"><img src="img/category/layer_62_2694.png" alt=""></div>
+						<div class="categories__card__body">
+							<div class="categories__logo"><img src="img/category/ellipse_20_3785.png" alt=""></div>
+							<div class="categories__title">Одежда и обувь</div>
+							<div class="categories__decor"><span></span></div>
+						</div>
+					</div>
+					<div class="categories__card">
+						<div class="categories__card__img"><img src="img/category/layer_63_2696.png" alt=""></div>
+						<div class="categories__card__body">
+							<div class="categories__logo"><img src="img/category/ellipse_20_3790.png" alt=""></div>
+							<div class="categories__title">Предметы искусства</div>
+							<div class="categories__decor"><span></span></div>
+						</div>
+					</div>
+					<div class="categories__card">
+						<div class="categories__card__img"><img src="img/category/layer_64_2698.png" alt=""></div>
+						<div class="categories__card__body">
+							<div class="categories__logo"><img src="img/category/ellipse_20_3794.png" alt=""></div>
+							<div class="categories__title">Алкоголь и еда</div>
+							<div class="categories__decor"><span></span></div>
+						</div>
+					</div>
+				</div>
+				<div class="categories__textbody">
+					<div class="categories__textdecor"><img src="img/category/decor.png" alt=""></div>
+					<div class="categories__text">
+						<p>Мы рады приветствовать вас на уникальной Лакшери аукционе, здесь вы сможете найти достойные
+							для
+							себя лоты. Аукцион по продаже недвижимости во многих развитых странах являюется основным
+							инструментом купли-продажи коммерческой, жилой, и муниципальной недвижимости, в том числе
+							квартир. Общий объем сделок в мире на аукционах по продаже недвижимости варьируется от 30%
+							до
+							80%. Для России аукцион недвижимости является относительно новым и обретает все большую
+							популярность. </p>
+						<p>Мы рады приветствовать вас на уникальной Лакшери аукционе, здесь вы сможете найти
+							достойные для себя лоты. Аукцион по продаже недвижимости во многих развитых странах
+							являюется
+							основным инструментом купли-продажи коммерческой, жилой, и муниципальной недвижимости, в том
+							числе квартир. Общий объем сделок в мире на аукционах по продаже недвижимости варьируется от
+							30%
+							до 80%. Для России аукцион недвижимости является относительно новым и обретает все большую
+							популярность. </p>
+						<p> Муниципальной недвижимости, в том числе квартир. Общий объем сделок в мире на
+							аукционах по продаже недвижимости варьируется от 30% до 80%.</p>
 					</div>
 				</div>
 			</div>
 		</section>
+
 		<section class="services">
 			<div class="services__container">
-				services
+				<div class="services__subtitle subtitle">Дополнительные</div>
+				<h2 class="services__title title">Услуги</h2>
+				<div class="services__decor decor">
+					<span></span> <img src="img/services/logo.png" alt=""> <span></span>
+				</div>
+				<div class="services__cards">
+					<div class="services__card">
+						<div class="services__img"><img src="img/services/1.png" alt=""></div>
+						<div class="services__cardtitle">Экспертная оценка</div>
+						<div class="services__text">Мы собираем эксклюзивную публику и экслюзивные лоты, даем удобный
+						</div>
+						<div class="services__button">Подробнее</div>
+					</div>
+					<div class="services__card">
+						<div class="services__img"><img src="img/services/2.png" alt=""></div>
+						<div class="services__cardtitle">заказ комплектующих</div>
+						<div class="services__text">Мы собираем эксклюзивную публику и экслюзивные лоты, даем удобный
+						</div>
+						<div class="services__button">Подробнее</div>
+					</div>
+					<div class="services__card">
+						<div class="services__img"><img src="img/services/3.png" alt=""></div>
+						<div class="services__cardtitle">ремонт и реставрациЯ</div>
+						<div class="services__text">Мы собираем эксклюзивную публику и экслюзивные лоты, даем удобный
+						</div>
+						<div class="services__button">Подробнее</div>
+					</div>
+
+				</div>
 			</div>
 		</section>
+
+
+		<section class="quotes">
+			<div class="quotes__container">
+				<div class="quotes__subtitle subtitle">Интересные</div>
+				<h2 class="quotes__title title">Цитаты</h2>
+				<div class="quotes__decor decor">
+					<span></span> <img src="img/quotes/logo.png" alt=""> <span></span>
+				</div>
+				<div class="quotes__card">
+					<div class="quotes__img"><img src="img/quotes/mt_1980.png" alt=""></div>
+					<div class="quotes__textblock">
+						<div class="quotes__text">«Легче одурачить людей, чем убедить их в том, что они одурачены»</div>
+						<div class="quotes__years">Марк Твен <br> 1935 -1910 </div>
+					</div>
+				</div>
+				<div class="quotes__button"><img src="img/quotes/btn.png" alt=""></div>
+
+			</div>
+			</div>
+			</div>
+		</section>
+
+
+
 		<section class="news">
 			<div class="news__container">
-				news
+				<div class="news__box">
+					<div class="news__news">
+						<div class="news__title title-news">Новости</div>
+						<div class="news__text text-news">
+							<span>12.07.14</span> <br>
+							<a>
+								Уникальной Лакшери аукционе, здесь вы сможете найти
+							</a> <br>
+							Продажа товаров, ценных бумаг,
+							имущества предприятий, произведений искусства и других объектов, которая...
+						</div>
+						<div class="news__text text-news">
+							<span>12.07.14</span> <br>
+							<a>
+								Достойные для себя лоты
+							</a> <br>
+							Имущества предприятий, произведений искусства и других объектов,
+							произведений редприятий, произведений искусств...
+						</div>
+						<div class="news__text text-news">
+							<span>12.07.14</span> <br>
+							<a>
+								Уникальной Лакшери аукцион
+							</a> <br>
+							Здесь вы сможете найти Продажа товаров, ценных бумаг, имущества предприятий,
+							произведений искусства и других объектов, которая...
+						</div>
+
+					</div>
+					<div class="news__events ewents">
+						<div class="events__title title-news">События</div>
+						<div class="events__text text-news">
+							<a>
+								Уникальной Лакшери аукционе, здесь вы сможете найти
+							</a> <br>
+							Продажа товаров, ценных бумаг,
+							имущества предприятий, произведений искусства и других объектов, которая...
+						</div>
+						<div class="events__text text-news">
+							<a>
+								Достойные для себя лоты
+							</a> <br>
+							Имущества предприятий, произведений искусства и других объектов,
+							произведений редприятий, произведений искусств...
+						</div>
+					</div>
+				</div>
+
+				<div class="news__subscribe subscribe">
+					<div class="subscribe__title title-news">Подписка</div>
+					<form class="subscribe__body">
+						<div class="subscribe__text text-news">Для получения уведомлений о новых предложениях, введите
+							адрес своей
+							электронной почты Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur
+							magni et nostrum totam, sunt quaerat veniam illum, corporis porro laudantium id nihil eius
+							harum animi! Iure voluptate nulla odio corporis?</div>
+						<div class="subscribe__form">
+							<input type="text" placeholder="Ваш E-mail" class="subscribe__input"></input>
+							<div class="subscribe__btn">Ok</div>
+						</div>
+					</form>
+				</div>
 			</div>
 		</section>
 	</main>
 	<footer class="footer">
 		<div class="footer__container">
-			footer
+			<div class="footer__row">
+				<div class="footer__logo"><img src="img/footer/logo.png" alt=""></div>
+				<div class="footer__links">
+					<a href="">Главная</a>
+					<a href="">Аукцион</a>
+					<a href="">О проекте</a>
+					<a href="">Партнерам</a>
+					<a href="">Контакты</a>
+					<a href="">Новости</a>
+					<a href="">FAQ</a>
+					<a href="">Реклама</a>
+					<a href="">Соглашение</a>
+					<a href="">Регистрация</a>
+					<a href=""> Услуги</a>
+				</div>
+				<div class="footer__number"> <span>+7</span> (495) 22-22-22</div>
+			</div>
+			<div class="footer__row">
+				<div class="footer__copy">Все права защищены © 2014</div>
+				<div class="footer__feedback"> <a href=""> Обратная связь</a></div>
+			</div>
 		</div>
 	</footer>
 
