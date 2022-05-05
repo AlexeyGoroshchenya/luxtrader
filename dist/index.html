@@ -13,7 +13,7 @@
 </head>
 
 <body>
-	<a href="#header" class="arrow arrow-active"><img src="img/arrowToTop/arrow.png" alt=""></a>
+	<a href="#header" class="arrow"><img src="img/arrowToTop/arrow.png" alt=""></a>
 	<header id="header" class="header">
 		<div class="header__container">
 			<div class="header__logo">
@@ -23,8 +23,8 @@
 			<nav class="header__menu menu-header">
 				<ul class="menu-header__body">
 					<li class="menu-header__item"> <a href="#" class="menu-header__link"> Главная</a> </li>
-					<li class="menu-header__item"> <a href="#" class="menu-header__link"> Аукцион</a> </li>
-					<li class="menu-header__item"> <a href="#" class="menu-header__link"> О проекте</a> </li>
+					<li class="menu-header__item"> <a href="#popular" class="menu-header__link"> Аукцион</a> </li>
+					<li class="menu-header__item"> <a href="#about" class="menu-header__link"> О проекте</a> </li>
 					<li class="menu-header__item"> <a href="#" class="menu-header__link"> Партнерам</a> </li>
 					<li class="menu-header__item"> <a href="#" class="menu-header__link"> Контакты</a> </li>
 					<div class="menu-header__close"><span>+</span></div>
@@ -42,7 +42,7 @@
 					<img src="img/header/shape_29_3715.png" alt="">
 					<img src="img/header/shape_29_3716.png" alt="">
 				</div>
-				<div class="user-menu__menu user-menu__menu-hidden">
+				<div class="user-menu__menu">
 					<ul class="user-menu__body">
 						<li class="user-menu__item user-menu__item-1">
 							<a href="#"> Выбор региона</a>
@@ -75,7 +75,7 @@
 			</div>
 		</section>
 
-		<section class="popular">
+		<section id="popular" class="popular">
 			<div class="popular__container">
 				<div class="popular__subtitle subtitle">Популярные</div>
 				<h2 class="popular__title title">лоты Под аукцион</h2>
@@ -315,7 +315,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="categories__textbody">
+				<div class="categories__textbody" id="about">
 					<div class="categories__textdecor"><img src="img/category/decor.png" alt=""></div>
 					<div class="categories__text">
 						<p>Мы рады приветствовать вас на уникальной Лакшери аукционе, здесь вы сможете найти достойные
@@ -354,21 +354,21 @@
 						<div class="services__cardtitle">Экспертная оценка</div>
 						<div class="services__text">Мы собираем эксклюзивную публику и экслюзивные лоты, даем удобный
 						</div>
-						<div class="services__button">Подробнее</div>
+						<a href="#" class="services__button">Подробнее</a>
 					</div>
 					<div class="services__card">
 						<div class="services__img"><img src="img/services/2.png" alt=""></div>
 						<div class="services__cardtitle">заказ комплектующих</div>
 						<div class="services__text">Мы собираем эксклюзивную публику и экслюзивные лоты, даем удобный
 						</div>
-						<div class="services__button">Подробнее</div>
+						<a href="#" class="services__button">Подробнее</a>
 					</div>
 					<div class="services__card">
 						<div class="services__img"><img src="img/services/3.png" alt=""></div>
 						<div class="services__cardtitle">ремонт и реставрациЯ</div>
 						<div class="services__text">Мы собираем эксклюзивную публику и экслюзивные лоты, даем удобный
 						</div>
-						<div class="services__button">Подробнее</div>
+						<a href="#" class="services__button">Подробнее</a>
 					</div>
 
 				</div>
@@ -471,9 +471,9 @@
 			<div class="footer__row">
 				<div class="footer__logo"><img src="img/footer/logo.png" alt=""></div>
 				<div class="footer__links">
-					<a href="">Главная</a>
-					<a href="">Аукцион</a>
-					<a href="">О проекте</a>
+					<a href="#header">Главная</a>
+					<a href="#popular">Аукцион</a>
+					<a href="#about">О проекте</a>
 					<a href="">Партнерам</a>
 					<a href="">Контакты</a>
 					<a href="">Новости</a>
@@ -485,7 +485,7 @@
 				</div>
 				<div class="footer__number"> <span>+7</span> (495) 22-22-22</div>
 			</div>
-			<div class="footer__row">
+			<div class="footer__row footer__row-copy">
 				<div class="footer__copy">Все права защищены © 2014</div>
 				<div class="footer__feedback"> <a href=""> Обратная связь</a></div>
 			</div>

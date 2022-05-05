@@ -161,6 +161,12 @@ body {
   z-index: 5;
 }
 
+@media (max-width: 991.98px) {
+  .arrow {
+    display: none;
+  }
+}
+
 .arrow img {
   width: 20px;
   height: 20px;
@@ -251,6 +257,7 @@ body {
 
   .header__logo {
     flex: 1 1 auto;
+
   }
 
   .header__menu__btn {
@@ -293,6 +300,7 @@ body {
     background-color: #1c242abd;
     font-size: 18px;
     overflow: auto;
+    gap: 30px;
   }
 
   .menu-header__body-active {
@@ -329,6 +337,12 @@ body {
 
 }
 
+@media (max-width: 767.98px) {
+  .header__container {
+    justify-content: flex-end;
+    gap: 25px;
+  }
+}
 
 
 .header__user {
@@ -378,6 +392,17 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+@media (max-width: 991.98px) {
+  .user-menu__menu {
+    bottom: -205px;
+    height: 200px;
+  }
+
+  .user-menu__body {
+    gap: 25px;
+  }
 }
 
 .user-menu__item a {
@@ -550,7 +575,7 @@ body {
 
 .popular {
   text-align: center;
-  padding-bottom: 60px;
+  padding-bottom: 30px;
 }
 
 .popular__container {}
@@ -746,7 +771,7 @@ body {
 /*============================================================================*/
 
 .categories {
-  padding-bottom: 60px;
+  padding: 30px 0 60px 0;
 
 }
 
@@ -875,10 +900,32 @@ body {
   padding-bottom: 0;
 }
 
+@media (max-width: 991.98px) {
+
+  .categories__container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .categories__textbody {
+    padding: 0 0 30px 0;
+  }
+
+  .categories__textdecor {
+    display: none;
+  }
+
+  .categories__galery {
+    padding-bottom: 40px;
+  }
+
+}
+
 
 /*============================================================================*/
 .services {
   background-color: #1c242a;
+  padding-bottom: 35px;
 }
 
 .services__container {}
@@ -911,7 +958,9 @@ body {
   padding: 0 20px 20px 20px;
 }
 
-.services__img {}
+.services__img img {
+  max-width: 100%;
+}
 
 .services__cardtitle {
   font-family: 'PF Din Text Cond Pro';
@@ -990,7 +1039,9 @@ body {
   margin: 0 auto;
 }
 
-.quotes__img {}
+.quotes__img img {
+  max-width: 100%;
+}
 
 .quotes__textblock {}
 
@@ -1055,6 +1106,25 @@ body {
 
 }
 
+@media (max-width: 767.98px) {
+  .quotes__card {
+    flex-direction: column;
+    width: 90vw;
+  }
+
+  .quotes__textblock {
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  .quotes__years,
+  .quotes__text {
+    padding: 0;
+  }
+
+
+}
+
 /*============================================================================*/
 
 .news {}
@@ -1064,8 +1134,14 @@ body {
 .news__box {
   display: flex;
   justify-content: center;
-  padding: 0 20px 40px 20px;
+  padding: 30px 20px 40px 20px;
   gap: 30px;
+}
+
+@media (max-width: 767.98px) {
+  .news__box {
+    flex-direction: column;
+  }
 }
 
 .news__news {}
@@ -1132,7 +1208,7 @@ body {
 .events__text {}
 
 .news__subscribe {
-  padding: 0 20px 20px 20px;
+  padding: 20px;
 }
 
 .subscribe {}
@@ -1167,6 +1243,24 @@ body {
   height: 100%;
   flex: 1 1 auto;
   padding: 0 15px;
+}
+
+@media (max-width: 767.98px) {
+  .news__subscribe {
+    padding-bottom: 40px;
+  }
+
+  .subscribe__body {
+    flex-direction: column;
+  }
+
+  .subscribe__text {
+    padding-right: 0;
+  }
+
+  .subscribe__form {
+    width: 100%;
+  }
 }
 
 .subscribe__btn {
@@ -1210,8 +1304,6 @@ body {
   align-items: center;
   justify-content: space-between;
 }
-
-
 
 .footer__logo {}
 
@@ -1274,6 +1366,19 @@ body {
 @media (max-width: 767.98px) {
   .footer__row {
     flex-direction: column;
+    padding-bottom: 20px;
+  }
+
+  .footer__row-copy {
+    gap: 20px;
+  }
+
+  .footer__links {
+    padding: 20px;
+  }
+
+  .footer a {
+    text-decoration: underline;
   }
 
   .footer {
