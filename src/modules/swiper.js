@@ -11,7 +11,7 @@ export const swiper = () => {
         loop: true,
         modules: [Autoplay, Navigation],
         autoplay: {
-            delay: 5000,
+            delay: 50000,
             disableOnInteraction: true,
             stopOnLastSlide: false,
         },
