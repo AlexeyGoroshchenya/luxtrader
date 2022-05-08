@@ -32,5 +32,22 @@ export const swiper = () => {
     }
     );
 
+    const quoteSwiper = new Swiper('.quotes__swiper', {
+        slidesPerView: 1,
+        spaceBetween: 100,
+        loop: true,
+        modules: [Autoplay, Navigation],
+        autoplay: {
+            delay: 10000,
+            disableOnInteraction: true,
+            stopOnLastSlide: false,
+        },
+
+        navigation: {
+            nextEl: '.quotes__button',
+        },
+    }
+    );
+
 
 }

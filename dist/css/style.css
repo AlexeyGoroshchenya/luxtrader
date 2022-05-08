@@ -115,12 +115,17 @@ h6 {
 
 
 body {
-  display: flex;
-  flex-direction: column;
   background-color: #ffffff;
   font-family: 'PT Sans';
 
 }
+
+.body__wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
 
 [class *="__container"] {
   max-width: 980px;
@@ -462,7 +467,7 @@ body {
 }
 
 .button {
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.1) 0%, rgba(208, 208, 208, 0.1) 100%);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.3) 0%, rgba(208, 208, 208, 0.3) 100%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -470,6 +475,7 @@ body {
   cursor: pointer;
   transition: all 0.5s;
   position: relative;
+  opacity: 0.9;
 }
 
 .button span::before,
@@ -510,8 +516,8 @@ body {
 }
 
 .button:hover {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(253, 246, 184, 0.3) 100%);
-
+  opacity: 1;
+  box-shadow: 0 3px 3px #8c632d96;
 }
 
 .decor {
@@ -753,9 +759,7 @@ body {
 
 .card__betting {}
 
-.card__current {
-  /*flex: 1 1 auto;*/
-}
+.card__current {}
 
 .card__current__body {
   height: 100px;
@@ -831,11 +835,30 @@ body {
   color: #000000;
   font-weight: 500;
   text-transform: uppercase;
+  transition-duration: 0.5s;
+  font-size: 20px;
+}
+
+.popular__button:hover {
+  color: #8c632d;
 }
 
 .popular__left,
 .popular__right {
   cursor: pointer;
+}
+
+.popular__left img,
+.popular__right img {
+  max-width: 100%;
+}
+
+@media (max-width: 767.98px) {
+
+  .popular__left,
+  .popular__right {
+    width: 100px;
+  }
 }
 
 /*============================================================================*/
@@ -878,7 +901,21 @@ body {
 }
 
 .categories__card__img img {
-  max-width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.categories__card__bg {
+  width: 100%;
+  height: 100%;
+  background-color: #33333385;
+  position: relative;
+  z-index: 2;
 }
 
 .categories__card__body {
@@ -887,7 +924,7 @@ body {
   left: 0;
   height: 100%;
   width: 100%;
-  z-index: 2;
+  z-index: 3;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1101,12 +1138,23 @@ body {
 
 .quotes__decor {}
 
+.quotes__swiper {
+  overflow: hidden;
+}
+
+.quotes__wrapper {}
+
+
 .quotes__card {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 70vw;
   margin: 0 auto;
+}
+
+.quotes__img {
+  flex: 0 0 250px;
 }
 
 .quotes__img img {
@@ -1189,7 +1237,7 @@ body {
 
   .quotes__years,
   .quotes__text {
-    padding: 0;
+    padding: 0 0 20px 0;
   }
 
 
@@ -1458,4 +1506,74 @@ body {
   .footer__number {
     flex: 0 0 auto;
   }
+}
+
+/*============================================================================*/
+
+.authorization {
+  width: 100vw;
+  height: 100vh;
+  background: #191d207c;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 10;
+  transition-duration: 0.5s;
+}
+
+.authorization-hidden {
+  opacity: 0;
+
+}
+
+.authorization__body {
+  width: 50vw;
+  height: 50vh;
+  background: #191d20;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.authorization__close {
+  color: #bb9c66;
+  font-size: 60px;
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  transform: rotate(45deg);
+  cursor: pointer;
+}
+
+.authorization__title {
+  color: #bb9c66;
+}
+
+.authorization__login,
+.authorization__pass {
+  width: 40vw;
+  background-color: #02233a;
+  height: 50px;
+  padding-left: 20px;
+  font-size: 24px;
+  color: #fafafa;
+}
+
+.authorization__registration {
+  color: #fafafa;
+  text-decoration: underline;
+  font-size: 20px;
+}
+
+.authorization__button {
+  width: 30vw;
+  height: 50px;
+  color: #bb9c66;
+  font-size: 24px;
+  font-weight: 500;
 }

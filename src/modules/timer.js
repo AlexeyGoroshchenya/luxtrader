@@ -1,9 +1,11 @@
-export const timer = (deadline) => {
+export const timer = (deadline, element) => {
 
-    const timerDays = document.querySelectorAll('.card__timer__body>span')[0];
-    const timerHours = document.querySelectorAll('.card__timer__body>span')[1];
-    const timerMinutes = document.querySelectorAll('.card__timer__body>span')[2];
-    const timerSeconds = document.querySelectorAll('.card__timer__body>span')[3];
+    const timerDays = element.querySelectorAll('.card__timer__box>span')[0];
+    const timerHours = element.querySelectorAll('.card__timer__box>span')[1];
+    const timerMinutes = element.querySelectorAll('.card__timer__box>span')[2];
+    const timerSeconds = element.querySelectorAll('.card__timer__box>span')[3];
+
+    console.log(timerDays);
 
     const getTimerRemaining = () => {
         let dateStop = new Date(deadline).getTime();
