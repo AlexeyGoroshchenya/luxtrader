@@ -35,19 +35,20 @@ export const blockBody = () => {
             div.style.overflowY = 'scroll';
             div.style.visibility = 'hidden';
             document.body.appendChild(div);
-            scrollWidth = div.offsetWidth - div.clientWidth;
+            scrollWidth = (div.offsetWidth - div.clientWidth);
             div.remove();
         }
         return scrollWidth;
     }
 
-    document.body.style.marginRight = `${calcScroll()}px`;
+    document.body.style.paddingRight = `${calcScroll()}px`;
     document.body.style.overflow = 'hidden'
+    console.log(document.body.style.paddingRight);
 
 }
 
 export const unblockBody = () => {
-    document.body.style.marginRight = '0';
+    document.body.style.paddingRight = '0';
     document.body.style.overflow = 'auto';
 
 }

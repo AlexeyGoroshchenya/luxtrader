@@ -2,25 +2,16 @@ import { db } from './database';
 import { timer } from './timer';
 
 export const renderSlider = () => {
-    console.log(db);
-    const sliderBody = document.querySelector('.popular__wrapper')
-    console.log(document.querySelectorAll('.popular__card'));
 
+	const sliderBody = document.querySelector('.popular__wrapper')
 
+	const renderCard = (item, index) => {
 
-    const getDeadline = () => {
-
-    }
-
-    const renderCard = (item, index) => {
-
-        const galeryCard = document.createElement('div');
-        galeryCard.classList.add('popular__card', 'card', 'swiper-slide')
-        galeryCard.setAttribute('deadline', item.deadline)
-        galeryCard.innerHTML = `
-        <div class="popular__card card swiper-slide">
-
-								<div class="card__body">
+		const galeryCard = document.createElement('div');
+		galeryCard.classList.add('popular__card', 'card', 'swiper-slide')
+		galeryCard.setAttribute('deadline', item.deadline)
+		galeryCard.innerHTML = `
+        								<div class="card__body">
 									<a href="#" class="card__image">
 										<img src="${item.image}" alt="">
 										<div class="card__timer">
@@ -55,21 +46,21 @@ export const renderSlider = () => {
 									</div>
 								</div>
 
-							</div>
+		
         `;
-        sliderBody.append(galeryCard);
-        timer(item.deadline, galeryCard)
-    }
+		sliderBody.append(galeryCard);
+		timer(item.deadline, galeryCard)
+	}
 
-    const init = () => {
-        sliderBody.innerHTML = '';
+	const init = () => {
+		sliderBody.innerHTML = '';
 
-        db.forEach((item) => {
-            renderCard(item)
-        })
+		db.forEach((item) => {
+			renderCard(item)
+		})
 
-    }
+	}
 
-    init()
+	init()
 
 }

@@ -633,6 +633,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   padding-bottom: 25px;
 }
 
@@ -717,7 +718,7 @@ body {
 .card__bid {
   width: 100%;
   padding-bottom: 25px;
-  flex: 1 1 auto;
+  flex: 0 0 125px;
   display: flex;
   justify-content: space-between;
 }
@@ -805,6 +806,7 @@ body {
 .card__button {}
 
 .card__button__body {
+  flex: 0 0 50px;
   width: 203px;
   height: 50px;
   font-family: 'PF Din Text Cond Pro';
@@ -889,7 +891,8 @@ body {
 }
 
 .categories__card:hover {
-  box-shadow: 0 8px 10px #1c242a;
+  transform: scale(1.05);
+
 }
 
 .categories__card__img {
@@ -982,21 +985,19 @@ body {
 }
 
 .categories__textbody {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding: 0 20px;
 }
 
-.categories__textdecor {
-  padding: 0 40px;
-}
 
 .categories__text {
+  background: url(../img/category/decor.png) left top repeat-y;
+  padding-left: 140px;
   font-family: 'PT Sans';
   font-size: 15px;
   line-height: 25px;
   font-weight: 400;
   color: #333333;
+  text-align: justify;
 }
 
 .categories__text p {
@@ -1009,18 +1010,17 @@ body {
 
 @media (max-width: 991.98px) {
 
-  .categories__container {
-    display: flex;
-    flex-direction: column-reverse;
-  }
+
 
   .categories__textbody {
-    padding: 0 0 30px 0;
+    padding: 0 20px 30px 20px;
   }
 
-  .categories__textdecor {
-    display: none;
+  .categories__text {
+    background: url(../img/category/decor.png) bottom repeat-x;
+    padding: 0 0 130px 0;
   }
+
 
   .categories__galery {
     padding-bottom: 40px;
@@ -1058,6 +1058,7 @@ body {
 }
 
 .services__card {
+  flex: 1 1 33.333%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1086,6 +1087,7 @@ body {
   font-weight: 400;
   color: #bb9c66;
   padding-bottom: 20px;
+  flex: 1 1 auto;
 }
 
 .services__button {
@@ -1401,8 +1403,8 @@ body {
 }
 
 .subscribe__btn:hover {
-  font-size: 23px;
-  border-left: 3px solid #bb9c66;
+
+  background: #bb9c66;
 }
 
 
@@ -1518,6 +1520,7 @@ body {
   align-items: center;
   justify-content: center;
   position: fixed;
+  overflow: hidden;
   z-index: 10;
   transition-duration: 0.5s;
 }
@@ -1571,6 +1574,71 @@ body {
 }
 
 .authorization__button {
+  width: 30vw;
+  height: 50px;
+  color: #bb9c66;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+/*============================================================================*/
+
+.feedback {
+  width: 100vw;
+  height: 100vh;
+  background: #191d207c;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  overflow: hidden;
+  z-index: 10;
+  transition-duration: 0.5s;
+}
+
+.feedback-hidden {
+  opacity: 0;
+}
+
+.feedback__body {
+  width: 50vw;
+  height: 50vh;
+  background: #191d20;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+}
+
+.feedback__close {
+  color: #bb9c66;
+  font-size: 60px;
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  transform: rotate(45deg);
+  cursor: pointer;
+}
+
+.feedback__title {
+  color: #bb9c66;
+}
+
+.feedback__text {
+  background: #191d20;
+  width: 40vw;
+  border: 1px solid #bb9c66;
+  height: 150px;
+  padding-left: 20px;
+  font-size: 24px;
+  color: #fafafa;
+}
+
+.feedback__button {
   width: 30vw;
   height: 50px;
   color: #bb9c66;

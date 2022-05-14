@@ -36,6 +36,7 @@ export const swiper = () => {
         slidesPerView: 1,
         spaceBetween: 100,
         loop: true,
+
         modules: [Autoplay, Navigation],
         autoplay: {
             delay: 10000,

@@ -5,8 +5,6 @@ export const timer = (deadline, element) => {
     const timerMinutes = element.querySelectorAll('.card__timer__box>span')[2];
     const timerSeconds = element.querySelectorAll('.card__timer__box>span')[3];
 
-    console.log(timerDays);
-
     const getTimerRemaining = () => {
         let dateStop = new Date(deadline).getTime();
         let dateNow = new Date().getTime();
