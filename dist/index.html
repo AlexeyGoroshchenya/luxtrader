@@ -516,14 +516,15 @@
 
 					<div class="news__subscribe subscribe">
 						<div class="subscribe__title title-news">Подписка</div>
-						<form class="subscribe__body">
+						<form action="#" class="subscribe__body">
 							<div class="subscribe__text text-news">Для получения уведомлений о новых предложениях,
 								введите
 								адрес своей
 								электронной почты</div>
 							<div class="subscribe__form">
-								<input type="text" placeholder="Ваш E-mail" class="subscribe__input"></input>
-								<div class="subscribe__btn">Ok</div>
+								<input type="text" placeholder="Ваш E-mail" class="subscribe__input"
+									name="email"></input>
+								<button type="submit" class="subscribe__btn">Ok</button>
 							</div>
 						</form>
 					</div>
@@ -547,7 +548,7 @@
 						<a href="">Регистрация</a>
 						<a href=""> Услуги</a>
 					</div>
-					<div class="footer__number"> <span>+7</span> (495) 22-22-22</div>
+					<a href="tel:+7495222222" class="footer__number"> <span>+7</span> (495) 22-22-22</a>
 				</div>
 				<div class="footer__row footer__row-copy">
 					<div class="footer__copy">Все права защищены © 2014</div>
@@ -569,8 +570,23 @@
 			<div class="feedback__body">
 				<div class="feedback__close">+</div>
 				<div class="feedback__title title">Обратная связь</div>
-				<textarea rows="10" cols="25" name="text" class="feedback__text"></textarea>
+				<div class="feedback__row">
+					<label for="formName">Имя</label>
+					<input id="formName" type="text" name="fio" class="feedback__name">
+				</div>
+				<div class="feedback__row">
+					<label for="formPhone">Телефон</label>
+					<input id="formPhone" type="text" name="phone" class="feedback__phone">
+				</div>
+
+				<textarea placeholder="Ваше сообщение" name="text" class="feedback__text"></textarea>
 				<div class="feedback__button button"> <span> Отправить </span></div>
+			</div>
+		</div>
+		<div class="alert  alert-hidden">
+			<div class="alert__body">
+				<div class="alert__text"></div>
+				<div class="alert__button button"> <span> Закрыть </span></div>
 			</div>
 		</div>
 

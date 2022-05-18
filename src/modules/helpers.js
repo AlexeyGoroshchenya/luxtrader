@@ -52,3 +52,34 @@ export const unblockBody = () => {
     document.body.style.overflow = 'auto';
 
 }
+
+export const openModal = (elem, className) => {
+    if (elem) {
+        elem.style.display = 'flex';
+        blockBody();
+
+        setTimeout(() => {
+            elem.classList.remove(className);
+        }, 300)
+    }
+}
+
+export const closeModal = (elem, className) => {
+    if (elem) {
+        unblockBody();
+
+        elem.classList.add(className);
+        setTimeout(() => {
+            elem.style.display = 'none';
+        }, 300)
+    }
+}
+
+const emailTest = (input) => {
+    return !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(input.value)
+}
+
+const nameTest = (input) => {
+    return input.value.match(/[^а-яА-яa-zA-Z\s]/) || input.value.length < 1
+}
+

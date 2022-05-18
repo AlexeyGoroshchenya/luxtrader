@@ -1,30 +1,10 @@
 import { blockBody } from './helpers';
 import { unblockBody } from './helpers';
+import { openModal } from './helpers';
+import { closeModal } from './helpers';
 
 
 export const formModals = () => {
-
-    const openModal = (elem, className) => {
-        if (elem) {
-            elem.style.display = 'flex';
-            blockBody();
-
-            setTimeout(() => {
-                elem.classList.remove(className);
-            }, 300)
-        }
-    }
-
-    const closeModal = (elem, className) => {
-        if (elem) {
-            unblockBody();
-
-            elem.classList.add(className);
-            setTimeout(() => {
-                elem.style.display = 'none';
-            }, 300)
-        }
-    }
 
 
     document.body.addEventListener('click', (e) => {
@@ -52,6 +32,13 @@ export const formModals = () => {
             if (!document.querySelector('.feedback').classList.contains('feedback-hidden')) {
                 modal = document.querySelector('.feedback');
                 closeModal(modal, 'feedback-hidden');
+            }
+        }
+
+        if (e.target.classList.contains('alert__button') || !e.target.closest('.alert__body')) {
+            if (!document.querySelector('.alert').classList.contains('alert-hidden')) {
+                modal = document.querySelector('.alert');
+                closeModal(modal, 'alert-hidden');
             }
         }
 
