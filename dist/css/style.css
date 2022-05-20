@@ -842,7 +842,7 @@ body {
 }
 
 .popular__button:hover {
-  color: #8c632d;
+  transform: scale(1.05);
 }
 
 .popular__left,
@@ -1480,7 +1480,6 @@ body {
 
 .footer a:hover {
   color: #8b622b;
-  text-decoration: underline;
   transition-duration: 0.5s;
 }
 
@@ -1638,20 +1637,15 @@ body {
 }
 
 .feedback__row input {
+  width: 100%;
   margin-left: 10px;
   background-color: #191d20;
   border: 1px solid #bb9c66;
   color: #fafafa;
   font-size: 20px;
-}
-
-.feedback__name {
   flex: 1 1 auto;
 }
 
-.feedback__phone {
-  flex: 1 1 auto;
-}
 
 .feedback__text {
   background: #191d20;

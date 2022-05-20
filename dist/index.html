@@ -522,7 +522,7 @@
 								адрес своей
 								электронной почты</div>
 							<div class="subscribe__form">
-								<input type="text" placeholder="Ваш E-mail" class="subscribe__input"
+								<input type="text" placeholder="Ваш E-mail" class="subscribe__input form-item"
 									name="email"></input>
 								<button type="submit" class="subscribe__btn">Ok</button>
 							</div>
@@ -560,28 +560,28 @@
 			<div class="authorization__body">
 				<div class="authorization__close">+</div>
 				<div class="authorization__title title">Авторизация</div>
-				<input type="text" class="authorization__login" placeholder="Логин" required>
-				<input type="password" class="authorization__pass" placeholder="пароль" required>
+				<input type="text" class="authorization__login form-item" placeholder="Логин" required>
+				<input type="password" class="authorization__pass form-item" placeholder="пароль" required>
 				<a href="#" class="authorization__registration">Зарегистрироваться</a>
 				<div class="authorization__button button"> <span> Войти </span></div>
 			</div>
 		</div>
 		<div class="feedback  feedback-hidden">
-			<div class="feedback__body">
+			<form class="feedback__body">
 				<div class="feedback__close">+</div>
 				<div class="feedback__title title">Обратная связь</div>
 				<div class="feedback__row">
 					<label for="formName">Имя</label>
-					<input id="formName" type="text" name="fio" class="feedback__name">
+					<input id="formName" type="text" name="fio" class="feedback__name form-item">
 				</div>
 				<div class="feedback__row">
 					<label for="formPhone">Телефон</label>
-					<input id="formPhone" type="text" name="phone" class="feedback__phone">
+					<input id="formPhone" type="text" name="phone" class="feedback__phone form-item">
 				</div>
 
-				<textarea placeholder="Ваше сообщение" name="text" class="feedback__text"></textarea>
-				<div class="feedback__button button"> <span> Отправить </span></div>
-			</div>
+				<textarea placeholder="Ваше сообщение" name="text" class="feedback__text form-item"></textarea>
+				<button type="submit" class="feedback__button button"> <span> Отправить </span></button>
+			</form>
 		</div>
 		<div class="alert  alert-hidden">
 			<div class="alert__body">

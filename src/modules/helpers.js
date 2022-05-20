@@ -43,7 +43,7 @@ export const blockBody = () => {
 
     document.body.style.paddingRight = `${calcScroll()}px`;
     document.body.style.overflow = 'hidden'
-    console.log(document.body.style.paddingRight);
+
 
 }
 

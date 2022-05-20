@@ -29,19 +29,20 @@ export const formModals = () => {
         }
 
         if (e.target.classList.contains('feedback__close') || !e.target.closest('.feedback__body')) {
-            if (!document.querySelector('.feedback').classList.contains('feedback-hidden')) {
+
+            if (document.querySelector('.alert').classList.contains('alert-hidden') && !document.querySelector('.feedback').classList.contains('feedback-hidden')) {
+                console.log('1');
                 modal = document.querySelector('.feedback');
                 closeModal(modal, 'feedback-hidden');
             }
         }
 
-        if (e.target.classList.contains('alert__button') || !e.target.closest('.alert__body')) {
+        if (e.target.closest('.alert__button') || !e.target.closest('.alert__body')) {
             if (!document.querySelector('.alert').classList.contains('alert-hidden')) {
                 modal = document.querySelector('.alert');
                 closeModal(modal, 'alert-hidden');
             }
         }
-
 
     })
 
