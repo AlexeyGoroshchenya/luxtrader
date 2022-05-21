@@ -1739,13 +1739,13 @@ body {
 .bet__body {
   background: #191d20;
   border-radius: 10px;
-  width: 90vw;
-  height: 90vh;
+  width: 80vw;
+  height: 80vh;
   overflow-y: auto;
   overflow-x: hidden;
   position: relative;
   color: #fafafa;
-  padding: 40px;
+  padding: 60px;
   display: flex;
   flex-direction: column;
 }
@@ -1770,11 +1770,12 @@ body {
   display: flex;
   gap: 20px;
   height: auto;
+  font-size: 20px;
 }
 
 .bet__galery {
   height: auto;
-  flex: 0 1 33%;
+  flex: 0 1 40%;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -1808,7 +1809,7 @@ body {
 }
 
 .bet__description {
-  flex: 1 1 67%;
+  flex: 1 1 60%;
   display: flex;
   flex-direction: column;
 }
@@ -1830,11 +1831,21 @@ body {
 
 .bet__row {
   display: flex;
+  align-items: center;
+  height: 50px;
+  padding-bottom: 15px;
+}
+
+.bet__row label {
+  padding-right: 15px;
 }
 
 .bet__input {
   flex: 1 1 auto;
-  margin: 0 15px 15px 15px;
+  height: 100%;
+  border: 1px solid #bb9c66;
+
+  background: #191d20;
 }
 
 .bet__button {

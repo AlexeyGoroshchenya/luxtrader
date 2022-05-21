@@ -6,6 +6,8 @@ export const db = [
         view: "198",
         betting: "70",
         current: "1855000",
+        description: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae possimus
+        blanditiis quibusdam ab similique et ex quisquam facere`,
         slider: true,
     },
     {
@@ -15,6 +17,9 @@ export const db = [
         view: "98",
         betting: "5",
         current: "500000",
+        description: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae possimus
+        blanditiis quibusdam ab similique et ex quisquam facere, quasi in quo a tempore beatae
+        voluptatem repellendus laudantium culpa cumque quaerat?`,
         slider: true,
     },
     {
@@ -24,6 +29,10 @@ export const db = [
         view: "18",
         betting: "7",
         current: "855000",
+        description: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae possimus
+        blanditiis quibusdam ab similique et ex quisquam facere, quasi in quo a tempore beatae
+        voluptatem repellendus laudantium culpa cumque quaerat? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae possimus
+        blanditiis quibusdam ab similique et ex quisquam facere`,
         slider: true,
     },
     {
@@ -33,6 +42,11 @@ export const db = [
         view: "70",
         betting: "55",
         current: "7000000",
+        description: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae possimus
+        blanditiis quibusdam ab similique et ex quisquam facere, quasi in quo a tempore beatae
+        voluptatem repellendus laudantium culpa cumque quaerat? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae possimus
+        blanditiis quibusdam ab similique et ex quisquam facere, quasi in quo a tempore beatae
+        voluptatem repellendus laudantium culpa cumque quaerat?`,
         slider: true,
     },
     {
@@ -42,6 +56,13 @@ export const db = [
         view: "7",
         betting: "12",
         current: "90000000",
+        description: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae possimus
+        blanditiis quibusdam ab similique et ex quisquam facere, quasi in quo a tempore beatae
+        voluptatem repellendus laudantium culpa cumque quaerat? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae possimus
+        blanditiis quibusdam ab similique et ex quisquam facere, quasi in quo a tempore beatae
+        voluptatem repellendus laudantium culpa cumque quaerat? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae possimus
+        blanditiis quibusdam ab similique et ex quisquam facere, quasi in quo a tempore beatae
+        voluptatem repellendus laudantium culpa cumque quaerat?`,
         slider: true,
     },
 

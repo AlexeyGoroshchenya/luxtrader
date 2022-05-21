@@ -19,7 +19,7 @@ export const renderSlider = () => {
 											<div class="card__timer__body"> <img src="img/popular/rectangle_16_3283.png"
 													alt="">
 												<br>
-												<div class="card__timer__box"><span>00</span>:<span>00</span>:<span>00</span>:<span>00</span>
+												<div class="card__timer__box timer-box"><span>00</span>:<span>00</span>:<span>00</span>:<span>00</span>
 												</div>
 											</div>
 										</div>
@@ -60,7 +60,7 @@ export const renderSlider = () => {
 
 			if (item.slider) {
 				renderCard(item, index)
-				console.log(db[index]);
+
 			}
 
 		})
