@@ -2,6 +2,7 @@ import { blockBody } from './helpers';
 import { unblockBody } from './helpers';
 import { openModal } from './helpers';
 import { closeModal } from './helpers';
+import { renderBetModal } from './renderBetModal';
 
 
 export const formModals = () => {
@@ -21,6 +22,23 @@ export const formModals = () => {
                 closeModal(modal, 'authorization-hidden');
             }
         }
+
+        if (e.target.closest('.card__button')) {
+
+            renderBetModal(e.target.closest('.popular__card').getAttribute('index'));
+
+
+            modal = document.querySelector('.bet');
+            openModal(modal, 'bet-hidden');
+        }
+        if (e.target.classList.contains('bet__close')) {
+            if (!document.querySelector('.bet').classList.contains('bet-hidden')) {
+                modal = document.querySelector('.bet');
+                closeModal(modal, 'bet-hidden');
+            }
+        }
+
+
 
         if (e.target.matches('.footer__feedback>a')) {
             e.preventDefault()

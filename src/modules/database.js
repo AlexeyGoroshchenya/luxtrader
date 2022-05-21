@@ -6,6 +6,7 @@ export const db = [
         view: "198",
         betting: "70",
         current: "1855000",
+        slider: true,
     },
     {
         name: "Rolex Paul Newman Daytona",
@@ -14,6 +15,7 @@ export const db = [
         view: "98",
         betting: "5",
         current: "500000",
+        slider: true,
     },
     {
         name: "Ring My pleasure",
@@ -22,6 +24,7 @@ export const db = [
         view: "18",
         betting: "7",
         current: "855000",
+        slider: true,
     },
     {
         name: "Arnold & Son Worldtimer discovery of antarctica",
@@ -30,6 +33,7 @@ export const db = [
         view: "70",
         betting: "55",
         current: "7000000",
+        slider: true,
     },
     {
         name: "Porshe 356",
@@ -38,6 +42,7 @@ export const db = [
         view: "7",
         betting: "12",
         current: "90000000",
+        slider: true,
     },
 
 ]

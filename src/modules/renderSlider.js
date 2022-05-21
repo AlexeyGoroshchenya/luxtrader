@@ -10,6 +10,7 @@ export const renderSlider = () => {
 		const galeryCard = document.createElement('div');
 		galeryCard.classList.add('popular__card', 'card', 'swiper-slide')
 		galeryCard.setAttribute('deadline', item.deadline)
+		galeryCard.setAttribute('index', index)
 		galeryCard.innerHTML = `
         								<div class="card__body">
 									<a href="#" class="card__image">
@@ -55,8 +56,13 @@ export const renderSlider = () => {
 	const init = () => {
 		sliderBody.innerHTML = '';
 
-		db.forEach((item) => {
-			renderCard(item)
+		db.forEach((item, index) => {
+
+			if (item.slider) {
+				renderCard(item, index)
+				console.log(db[index]);
+			}
+
 		})
 
 	}
