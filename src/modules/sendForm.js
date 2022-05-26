@@ -1,5 +1,10 @@
 import { openModal } from './helpers';
 import { closeModal } from './helpers';
+import { db } from './database';
+import { renderBetModal } from './renderBetModal';
+import { renderSlider } from './renderSlider';
+import { swiper } from './swiper';
+
 
 export const sendForm = (form, url) => {
 
@@ -10,6 +15,9 @@ export const sendForm = (form, url) => {
     const loadText = 'Заявка отправляется...';
     const successText = 'С вами свяжется наш менеджер';
     const notValidText = 'Пожалуйста проверьте введенные данные'
+
+    let currentBet = ''
+    let bet = 0
 
     const showSubmitStatus = (str) => {
 
@@ -33,6 +41,7 @@ export const sendForm = (form, url) => {
         let nameInput = true
         let phoneInput = true
         let emailInput = true
+        let betInput = true
 
         list.forEach(input => {
 
@@ -58,8 +67,29 @@ export const sendForm = (form, url) => {
                     phoneInput = false
                 }
             }
+            if (input.matches('input[name = bet]')) {
+
+                currentBet = input.closest('.bet__card').getAttribute('index')
+
+                if (input.value.length < 1) {
+                    showUncorrectInput(input)
+                    showSubmitStatus('Пожалуйста используйте цифровое значение')
+                    betInput = false
+                    bet = 0
+                } else if (+input.value < +db[currentBet].current) {
+                    showUncorrectInput(input)
+                    showSubmitStatus('Ваша ставка меньше текущей высшей ставки')
+                    betInput = false
+                    bet = 0
+                } else {
+                    bet = +input.value
+                }
+
+
+            }
+
         })
-        let success = nameInput && phoneInput && emailInput
+        let success = nameInput && phoneInput && emailInput && betInput
 
         return success
 
@@ -75,6 +105,12 @@ export const sendForm = (form, url) => {
         }).then(res => res.json())
     }
 
+    const makeBet = (index, bet) => {
+        db[index].current = bet;
+        db[index].betting++
+        renderBetModal(index)
+    }
+
     const submitData = () => {
         const formElements = form.querySelectorAll('.form-item')
         const formData = new FormData(form)
@@ -87,13 +123,17 @@ export const sendForm = (form, url) => {
         })
 
 
-        console.log(formBody);
-
-
         if (validate(formElements)) {
             sendData(formBody)
                 .then(data => {
-                    showSubmitStatus(successText)
+
+                    if (bet > 0) {
+                        showSubmitStatus('Ваша ставка принята')
+                        makeBet(currentBet, bet)
+                        renderSlider()
+                        swiper()
+                        bet = 0
+                    } else { showSubmitStatus(successText) }
 
                     setTimeout(() => {
 
@@ -109,7 +149,7 @@ export const sendForm = (form, url) => {
                 })
                 .catch(error => {
                     console.log(error);
-                    successText(errorText)
+                    showSubmitStatus(errorText)
                 })
         } else {
             console.log('данные не валидны');

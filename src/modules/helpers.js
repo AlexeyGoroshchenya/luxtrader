@@ -19,7 +19,7 @@ export const animate = ({ timing, draw, duration }) => {
     });
 }
 
-export const blockBody = () => {
+const blockBody = () => {
     function calcScroll() {
         let scrollWidth = 0;
         let scrollHeight = Math.max(
@@ -47,7 +47,7 @@ export const blockBody = () => {
 
 }
 
-export const unblockBody = () => {
+const unblockBody = () => {
     document.body.style.paddingRight = '0';
     document.body.style.overflow = 'auto';
 
