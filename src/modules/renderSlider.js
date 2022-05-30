@@ -16,7 +16,7 @@ export const renderSlider = () => {
 									<a href="#" class="card__image">
 										<img src="${item.image}" alt="">
 										<div class="card__timer">
-											<div class="card__timer__body"> <img src="img/popular/rectangle_16_3283.png"
+											<div class="card__timer__body"> <img src="dist/img/popular/rectangle_16_3283.png"
 													alt="">
 												<br>
 												<div class="card__timer__box timer-box"><span>00</span>:<span>00</span>:<span>00</span>:<span>00</span>
@@ -28,7 +28,7 @@ export const renderSlider = () => {
 									<a href="" class="card__title">${item.name}
 									</a>
 									<div class="card__bid">
-										<div class="card__view"><span><img src="img/popular/eye.png" alt=""></span>
+										<div class="card__view"><span><img src="dist/img/popular/eye.png" alt=""></span>
 											<p> ${item.view}</p>
 										</div>
 										<div class="card__current">
@@ -38,7 +38,7 @@ export const renderSlider = () => {
 												<p>ք</p>
 											</div>
 										</div>
-										<div class="card__betting"><span><img src="img/popular/palm.png" alt=""></span>
+										<div class="card__betting"><span><img src="dist/img/popular/palm.png" alt=""></span>
 											<p>${item.betting}</p>
 										</div>
 									</div>

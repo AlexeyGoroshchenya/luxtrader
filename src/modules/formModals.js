@@ -54,6 +54,19 @@ export const formModals = () => {
             }
         }
 
+        if (e.target.closest('.attention-open')) {
+            e.preventDefault()
+            openModal(document.querySelector('.attention'), 'attention-hidden');
+        }
+
+        if (e.target.closest('.attention__button') || !e.target.closest('.attention__body')) {
+            if (!document.querySelector('.attention').classList.contains('attention-hidden')) {
+
+                closeModal(document.querySelector('.attention'), 'attention-hidden');
+            }
+        }
+
+
     })
 
 

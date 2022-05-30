@@ -3,28 +3,29 @@
 
 <head>
 	<title>LuxTraiding</title>
-	<link rel="shortcut icon" href="img/header/favicon.ico">
+	<link rel="shortcut icon" href="dist/img/header/favicon.ico">
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans:regular,italic,700&subset=cyrillic-ext"
 		rel="stylesheet" />
 	<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
-	<link rel="stylesheet" href="css/style.css" />
-	<script src="./js/main.js" defer></script>
+	<link rel="stylesheet" href="dist/css/style.css" />
+	<script src="dist/js/main.js" defer></script>
 	<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
 	<meta name="viewport" content="width=device-width">
 </head>
 
 <body>
 	<div class="body__wrapper">
-		<a href="#header" class="arrow"><img src="img/arrowToTop/arrow.png" alt=""></a>
+		<a href="#header" class="arrow"><img src="dist/img/arrowToTop/arrow.png" alt=""></a>
 		<header id="header" class="header">
 			<div class="header__container">
 				<div class="header__logo">
-					<div class="header__logo__hammer"><img src="img/header/shape_13_2208.png" alt=""></div>
-					<div class="header__logo__name"><img src="img/header/shape_12_2207.png" alt=""></div>
+					<div class="header__logo__hammer"><img src="dist/img/header/shape_13_2208.png" alt=""></div>
+					<div class="header__logo__name"><img src="dist/img/header/shape_12_2207.png" alt=""></div>
 				</div>
 				<nav class="header__menu menu-header">
 					<ul class="menu-header__body">
-						<li class="menu-header__item"> <a href="#" class="menu-header__link"> Главная</a> </li>
+						<li class="menu-header__item"> <a href="#join" class="menu-header__link"> Главная</a>
+						</li>
 						<li class="menu-header__item"> <a href="#popular" class="menu-header__link"> Аукцион</a> </li>
 						<li class="menu-header__item"> <a href="#about" class="menu-header__link"> О проекте</a> </li>
 						<li class="menu-header__item"> <a href="#services" class="menu-header__link"> Услуги</a> </li>
@@ -39,21 +40,24 @@
 				</div>
 
 				<div class="header__user user-menu">
-					<div class="user-menu__button"><img src="img/header/ellipse_20_3713.png" alt=""></div>
+					<div class="user-menu__button"><img src="dist/img/header/ellipse_20_3713.png" alt=""></div>
 					<div class="user-menu__arrows">
-						<img src="img/header/shape_29_3715.png" alt="">
-						<img src="img/header/shape_29_3716.png" alt="">
+						<img src="dist/img/header/shape_29_3715.png" alt="">
+						<img src="dist/img/header/shape_29_3716.png" alt="">
 					</div>
 					<div class="user-menu__menu">
 						<ul class=" user-menu__body">
 							<li class="user-menu__item user-menu__item-1">
-								<a href="#"> Выбор региона</a>
+								<a href="#" class="attention-open"> Выбор региона</a>
 							</li>
-							<li class="user-menu__item user-menu__item-2"> <a href="#">Личный кабинет</a>
+							<li class="user-menu__item user-menu__item-2"> <a href="#" class="attention-open">Личный
+									кабинет</a>
 							</li>
-							<li class="user-menu__item user-menu__item-3"> <a href="#">Мои ставки</a>
+							<li class="user-menu__item user-menu__item-3"> <a href="#" class="attention-open">Мои
+									ставки</a>
 							</li>
-							<li class="user-menu__item user-menu__item-4"> <a href="#">Мои лоты</a>
+							<li class="user-menu__item user-menu__item-4"> <a href="#" class="attention-open">Мои
+									лоты</a>
 							</li>
 						</ul>
 					</div>
@@ -61,7 +65,7 @@
 			</div>
 		</header>
 		<main class="content">
-			<section class="join">
+			<section class="join" id="join">
 				<div class="join__container">
 					<div class="join__subtitle subtitle">Только эксклюзивные</div>
 					<h1 class="join__title title">Лоты под аукцион и свобоДную продажу</h1>
@@ -83,7 +87,7 @@
 					<div class="popular__subtitle subtitle">Популярные</div>
 					<h2 class="popular__title title">лоты Под аукцион</h2>
 					<div class="popular__decor decor">
-						<span></span> <img src="img/popular/logo.png" alt=""> <span></span>
+						<span></span> <img src="dist/img/popular/logo.png" alt=""> <span></span>
 					</div>
 					<div class="popular__slider swiper">
 						<div class="popular__wrapper swiper-wrapper">
@@ -91,10 +95,10 @@
 
 								<div class="card__body">
 									<a href="#" class="card__image">
-										<img src="img/popular/rectangle_4_3190.png" alt="">
+										<img src="dist/img/popular/rectangle_4_3190.png" alt="">
 										<div class="card__timer">
-											<div class="card__timer__body"> <img src="img/popular/rectangle_16_3283.png"
-													alt="">
+											<div class="card__timer__body"> <img
+													src="dist/img/popular/rectangle_16_3283.png" alt="">
 												<br>
 												<div class="card__timer__box timer-box">
 													<span>00</span>:<span>00</span>:<span>00</span>:<span>00</span>
@@ -108,7 +112,7 @@
 										Son Worldtimer discovery of antarctica
 									</a>
 									<div class="card__bid">
-										<div class="card__view"><span><img src="img/popular/eye.png" alt=""></span>
+										<div class="card__view"><span><img src="dist/img/popular/eye.png" alt=""></span>
 											<p> 1098</p>
 										</div>
 										<div class="card__current">
@@ -118,7 +122,8 @@
 												<p>ք</p>
 											</div>
 										</div>
-										<div class="card__betting"><span><img src="img/popular/palm.png" alt=""></span>
+										<div class="card__betting"><span><img src="dist/img/popular/palm.png"
+													alt=""></span>
 											<p>25</p>
 										</div>
 									</div>
@@ -131,10 +136,10 @@
 							<div class="popular__card card swiper-slide">
 								<div class="card__body">
 									<a href="#" class="card__image">
-										<img src="img/popular/rectangle_4_3317.png" alt="">
+										<img src="dist/img/popular/rectangle_4_3317.png" alt="">
 										<div class="card__timer">
-											<div class="card__timer__body"> <img src="img/popular/rectangle_16_3283.png"
-													alt="">
+											<div class="card__timer__body"> <img
+													src="dist/img/popular/rectangle_16_3283.png" alt="">
 												<br>
 												<div class="card__timer__box timer-box">
 													<span>00</span>:<span>00</span>:<span>00</span>:<span>00</span>
@@ -146,7 +151,7 @@
 									<a href="#" class="card__title">Chateau Lafite 1949
 									</a>
 									<div class="card__bid">
-										<div class="card__view"><span><img src="img/popular/eye.png" alt=""></span>
+										<div class="card__view"><span><img src="dist/img/popular/eye.png" alt=""></span>
 											<p> 198</p>
 										</div>
 										<div class="card__current">
@@ -156,7 +161,8 @@
 												<p>ք</p>
 											</div>
 										</div>
-										<div class="card__betting"><span><img src="img/popular/palm.png" alt=""></span>
+										<div class="card__betting"><span><img src="dist/img/popular/palm.png"
+													alt=""></span>
 											<p>70</p>
 										</div>
 									</div>
@@ -168,10 +174,10 @@
 							<div class="popular__card card swiper-slide">
 								<div class="card__body">
 									<a href="#" class="card__image">
-										<img src="img/popular/rectangle_4_3236.png" alt="">
+										<img src="dist/img/popular/rectangle_4_3236.png" alt="">
 										<div class="card__timer">
-											<div class="card__timer__body"> <img src="img/popular/rectangle_16_3283.png"
-													alt="">
+											<div class="card__timer__body"> <img
+													src="dist/img/popular/rectangle_16_3283.png" alt="">
 												<br>
 												<div class="card__timer__box timer-box">
 													<span>00</span>:<span>00</span>:<span>00</span>:<span>00</span>
@@ -183,7 +189,7 @@
 									<a href="#" class="card__title">Rolex Paul Newman Daytona
 									</a>
 									<div class="card__bid">
-										<div class="card__view"><span><img src="img/popular/eye.png" alt=""></span>
+										<div class="card__view"><span><img src="dist/img/popular/eye.png" alt=""></span>
 											<p>98</p>
 										</div>
 										<div class="card__current">
@@ -193,7 +199,8 @@
 												<p>ք</p>
 											</div>
 										</div>
-										<div class="card__betting"><span><img src="img/popular/palm.png" alt=""></span>
+										<div class="card__betting"><span><img src="dist/img/popular/palm.png"
+													alt=""></span>
 											<p>5</p>
 										</div>
 									</div>
@@ -205,10 +212,10 @@
 							<div class="popular__card card swiper-slide">
 								<div class="card__body">
 									<a href="#" class="card__image">
-										<img src="img/popular/rectangle_16_0000.png" alt="">
+										<img src="dist/img/popular/rectangle_16_0000.png" alt="">
 										<div class="card__timer">
-											<div class="card__timer__body"> <img src="img/popular/rectangle_16_3283.png"
-													alt="">
+											<div class="card__timer__body"> <img
+													src="dist/img/popular/rectangle_16_3283.png" alt="">
 												<br>
 												<div class="card__timer__box timer-box">
 													<span>00</span>:<span>00</span>:<span>00</span>:<span>00</span>
@@ -221,7 +228,7 @@
 									<a href="#" class="card__title">Ring My pleasure
 									</a>
 									<div class="card__bid">
-										<div class="card__view"><span><img src="img/popular/eye.png" alt=""></span>
+										<div class="card__view"><span><img src="dist/img/popular/eye.png" alt=""></span>
 											<p>98</p>
 										</div>
 										<div class="card__current">
@@ -231,7 +238,8 @@
 												<p>ք</p>
 											</div>
 										</div>
-										<div class="card__betting"><span><img src="img/popular/palm.png" alt=""></span>
+										<div class="card__betting"><span><img src="dist/img/popular/palm.png"
+													alt=""></span>
 											<p>5</p>
 										</div>
 									</div>
@@ -243,96 +251,105 @@
 
 						</div>
 						<div class="popular__control">
-							<div class="popular__left"><img src="img/popular/arrow1.png" alt=""></div>
-							<a href="#" class="popular__button">
+							<div class="popular__left"><img src="dist/img/popular/arrow1.png" alt=""></div>
+							<a href="#categories" class="popular__button">
 								Все лоты
 							</a>
-							<div class="popular__right"><img src="img/popular/arrow2.png" alt=""></div>
+							<div class="popular__right"><img src="dist/img/popular/arrow2.png" alt=""></div>
 						</div>
 
 					</div>
 				</div>
 			</section>
-			<section class="categories">
+			<section class="categories" id="categories">
 				<div class="categories__container">
 					<div class="categories__galery">
-						<a href="#" class="categories__card">
-							<div class="categories__card__img"><img src="img/category/wat.png" alt=""></div>
+						<a href="#" class="categories__card attention-open">
+							<div class="categories__card__img"><img src="dist/img/category/wat.png" alt=""></div>
 							<div class="categories__card__bg"></div>
 							<div class="categories__card__body">
-								<div class="categories__logo"><img src="img/category/ellipse_20_3748.png" alt=""></div>
+								<div class="categories__logo"><img src="dist/img/category/ellipse_20_3748.png" alt="">
+								</div>
 								<div class="categories__title">Часы</div>
 								<div class="categories__decor"> <span></span> </div>
 							</div>
 						</a>
-						<a href="#" class="categories__card">
-							<div class="categories__card__img"><img src="img/category/jew.png" alt=""></div>
+						<a href="#" class="categories__card attention-open">
+							<div class="categories__card__img"><img src="dist/img/category/jew.png" alt=""></div>
 							<div class="categories__card__bg"></div>
 							<div class="categories__card__body">
-								<div class="categories__logo"><img src="img/category/ellipse_20_3754.png" alt=""></div>
+								<div class="categories__logo"><img src="dist/img/category/ellipse_20_3754.png" alt="">
+								</div>
 								<div class="categories__title">Ювелирные изделия</div>
 								<div class="categories__decor"><span></span></div>
 							</div>
 						</a>
-						<a href="#" class="categories__card">
-							<div class="categories__card__img"><img src="img/category/1480684.jpg" alt=""></div>
+						<a href="#" class="categories__card attention-open">
+							<div class="categories__card__img"><img src="dist/img/category/1480684.jpg" alt=""></div>
 							<div class="categories__card__bg"></div>
 							<div class="categories__card__body">
-								<div class="categories__logo"><img src="img/category/ellipse_20_3760.png" alt=""></div>
+								<div class="categories__logo"><img src="dist/img/category/ellipse_20_3760.png" alt="">
+								</div>
 								<div class="categories__title">Автотранспорт и лодки</div>
 								<div class="categories__decor"><span></span></div>
 							</div>
 						</a>
-						<a href="#" class="categories__card">
-							<div class="categories__card__img"><img src="img/category/acs.png" alt=""></div>
+						<a href="#" class="categories__card attention-open">
+							<div class="categories__card__img"><img src="dist/img/category/acs.png" alt=""></div>
 							<div class="categories__card__bg"></div>
 							<div class="categories__card__body">
-								<div class="categories__logo"><img src="img/category/ellipse_20_3768.png" alt=""></div>
+								<div class="categories__logo"><img src="dist/img/category/ellipse_20_3768.png" alt="">
+								</div>
 								<div class="categories__title">Аксессуары</div>
 								<div class="categories__decor"><span></span></div>
 							</div>
 						</a>
-						<a href="#" class="categories__card">
-							<div class="categories__card__img"><img src="img/category/est.png" alt=""></div>
+						<a href="#" class="categories__card attention-open">
+							<div class="categories__card__img"><img src="dist/img/category/est.png" alt=""></div>
 							<div class="categories__card__bg"></div>
 							<div class="categories__card__body">
-								<div class="categories__logo"><img src="img/category/ellipse_20_3772.png" alt=""></div>
+								<div class="categories__logo"><img src="dist/img/category/ellipse_20_3772.png" alt="">
+								</div>
 								<div class="categories__title">Недвижимость</div>
 								<div class="categories__decor"><span></span></div>
 							</div>
 						</a>
-						<a href="#" class="categories__card">
-							<div class="categories__card__img"><img src="img/category/pho.png" alt=""></div>
+						<a href="#" class="categories__card attention-open">
+							<div class="categories__card__img"><img src="dist/img/category/pho.png" alt=""></div>
 							<div class="categories__card__bg"></div>
 							<div class="categories__card__body">
-								<div class="categories__logo"><img src="img/category/ellipse_20_3776.png" alt=""></div>
+								<div class="categories__logo"><img src="dist/img/category/ellipse_20_3776.png" alt="">
+								</div>
 								<div class="categories__title">HI-TECH</div>
 								<div class="categories__decor"><span></span></div>
 							</div>
 						</a>
-						<a href="#" class="categories__card">
-							<div class="categories__card__img"><img src="img/category/obuv.png" alt=""></div>
+						<a href="#" class="categories__card attention-open">
+							<div class="categories__card__img"><img src="dist/img/category/obuv.png" alt=""></div>
 							<div class="categories__card__bg"></div>
 							<div class="categories__card__body">
-								<div class="categories__logo"><img src="img/category/ellipse_20_3785.png" alt=""></div>
+								<div class="categories__logo"><img src="dist/img/category/ellipse_20_3785.png" alt="">
+								</div>
 								<div class="categories__title">Одежда и обувь</div>
 								<div class="categories__decor"><span></span></div>
 							</div>
 						</a>
-						<a href="#" class="categories__card">
-							<div class="categories__card__img"><img src="img/category/iss.png" alt=""></div>
+						<a href="#" class="categories__card attention-open">
+							<div class="categories__card__img"><img src="dist/img/category/iss.png" alt=""></div>
 							<div class="categories__card__bg"></div>
 							<div class="categories__card__body">
-								<div class="categories__logo"><img src="img/category/ellipse_20_3790.png" alt=""></div>
+								<div class="categories__logo"><img src="dist/img/category/ellipse_20_3790.png" alt="">
+								</div>
 								<div class="categories__title">Предметы искусства</div>
 								<div class="categories__decor"><span></span></div>
 							</div>
 						</a>
-						<a href="#" class="categories__card">
-							<div class="categories__card__img"><img src="img/category/vino.png" alt=""></div>
+						<a href="#" class="categories__card attention-open">
+							<div class="categories__card__img"><img src="dist/img/category/vino.png" alt=""></div>
 							<div class="categories__card__bg"></div>
 							<div class="categories__card__body">
-								<div class="categories__logo"><img src="img/category/ellipse_20_3794.png" alt=""></div>
+								<div class="categories__logo"><img src="dist/img/category/ellipse_20_3794.png" alt="">
+								</div>
 								<div class="categories__title">Алкоголь и еда</div>
 								<div class="categories__decor"><span></span></div>
 							</div>
@@ -397,32 +414,32 @@
 					<div class="services__subtitle subtitle">Дополнительные</div>
 					<h2 class="services__title title">Услуги</h2>
 					<div class="services__decor decor">
-						<span></span> <img src="img/services/logo.png" alt=""> <span></span>
+						<span></span> <img src="dist/img/services/logo.png" alt=""> <span></span>
 					</div>
 					<div class="services__cards">
 						<div class="services__card">
-							<div class="services__img"><img src="img/services/1.png" alt=""></div>
+							<div class="services__img"><img src="dist/img/services/1.png" alt=""></div>
 							<div class="services__cardtitle">Экспертная оценка</div>
 							<div class="services__text">Мы собираем эксклюзивную публику и экслюзивные лоты, даем
 								удобный
 							</div>
-							<a href="#" class="services__button">Подробнее</a>
+							<a href="#" class="services__button attention-open">Подробнее</a>
 						</div>
 						<div class="services__card">
-							<div class="services__img"><img src="img/services/2.png" alt=""></div>
+							<div class="services__img"><img src="dist/img/services/2.png" alt=""></div>
 							<div class="services__cardtitle">заказ комплектующих</div>
 							<div class="services__text">Мы собираем эксклюзивную публику и экслюзивные лоты, даем
 								удобный Мы собираем эксклюзивную публику и экслюзивные лоты, даем
 							</div>
-							<a href="#" class="services__button">Подробнее</a>
+							<a href="#" class="services__button attention-open">Подробнее</a>
 						</div>
 						<div class="services__card">
-							<div class="services__img"><img src="img/services/3.png" alt=""></div>
+							<div class="services__img"><img src="dist/img/services/3.png" alt=""></div>
 							<div class="services__cardtitle">ремонт и реставрациЯ</div>
 							<div class="services__text">Мы собираем эксклюзивную публику и экслюзивные лоты, даем
 								удобный
 							</div>
-							<a href="#" class="services__button">Подробнее</a>
+							<a href="#" class="services__button attention-open ">Подробнее</a>
 						</div>
 
 					</div>
@@ -435,12 +452,12 @@
 					<div class="quotes__subtitle subtitle">Интересные</div>
 					<h2 class="quotes__title title">Цитаты</h2>
 					<div class="quotes__decor decor">
-						<span></span> <img src="img/quotes/logo.png" alt=""> <span></span>
+						<span></span> <img src="dist/img/quotes/logo.png" alt=""> <span></span>
 					</div>
 					<div class="quotes__swiper">
 						<div class="quotes__wrapper swiper-wrapper">
 							<div class="quotes__card swiper-slide">
-								<div class="quotes__img"><img src="img/quotes/mt_1980.png" alt=""></div>
+								<div class="quotes__img"><img src="dist/img/quotes/mt_1980.png" alt=""></div>
 								<div class="quotes__textblock">
 									<div class="quotes__text">«Легче одурачить людей, чем убедить их в том, что они
 										одурачены»
@@ -449,7 +466,7 @@
 								</div>
 							</div>
 							<div class="quotes__card swiper-slide">
-								<div class="quotes__img"><img src="img/quotes/tolstoi.jpg" alt=""></div>
+								<div class="quotes__img"><img src="dist/img/quotes/tolstoi.jpg" alt=""></div>
 								<div class="quotes__textblock">
 									<div class="quotes__text">«Это самое ужасное рассуждение: если я не могу всего —
 										значит,
@@ -460,7 +477,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="quotes__button"><img src="img/quotes/btn.png" alt=""></div>
+					<div class="quotes__button"><img src="dist/img/quotes/btn.png" alt=""></div>
 
 				</div>
 
@@ -476,7 +493,7 @@
 							<div class="news__title title-news">Новости</div>
 							<div class="news__text text-news">
 								<span>12.07.14</span> <br>
-								<a>
+								<a href="#" class="attention-open">
 									Уникальной Лакшери аукционе, здесь вы сможете найти
 								</a> <br>
 								Продажа товаров, ценных бумаг,
@@ -484,7 +501,7 @@
 							</div>
 							<div class="news__text text-news">
 								<span>12.07.14</span> <br>
-								<a>
+								<a href="#" class="attention-open">
 									Достойные для себя лоты
 								</a> <br>
 								Имущества предприятий, произведений искусства и других объектов,
@@ -492,7 +509,7 @@
 							</div>
 							<div class="news__text text-news">
 								<span>12.07.14</span> <br>
-								<a>
+								<a href="#" class="attention-open">
 									Уникальной Лакшери аукцион
 								</a> <br>
 								Здесь вы сможете найти Продажа товаров, ценных бумаг, имущества предприятий,
@@ -503,14 +520,14 @@
 						<div class="news__events ewents">
 							<div class="events__title title-news">События</div>
 							<div class="events__text text-news">
-								<a>
+								<a href="#" class="attention-open">
 									Уникальной Лакшери аукционе, здесь вы сможете найти
 								</a> <br>
 								Продажа товаров, ценных бумаг,
 								имущества предприятий, произведений искусства и других объектов, которая...
 							</div>
 							<div class="events__text text-news">
-								<a>
+								<a href="#" class="attention-open">
 									Достойные для себя лоты
 								</a> <br>
 								Имущества предприятий, произведений искусства и других объектов,
@@ -539,25 +556,25 @@
 		<footer class="footer">
 			<div class="footer__container">
 				<div class="footer__row">
-					<div class="footer__logo"><img src="img/footer/logo.png" alt=""></div>
+					<div class="footer__logo"><img src="dist/img/footer/logo.png" alt=""></div>
 					<div class="footer__links">
-						<a href="#header">Главная</a>
-						<a href="#popular">Аукцион</a>
-						<a href="#about">О проекте</a>
-						<a href="">Партнерам</a>
-						<a href="">Контакты</a>
-						<a href="">Новости</a>
-						<a href="">FAQ</a>
-						<a href="">Реклама</a>
-						<a href="">Соглашение</a>
-						<a href="">Регистрация</a>
-						<a href=""> Услуги</a>
+						<a href="#header" class="footer__link">Главная</a>
+						<a href="#popular" class="footer__link">Аукцион</a>
+						<a href="#about" class="footer__link">О проекте</a>
+						<a href="#" class="attention-open">Партнерам</a>
+						<a href="#" class="attention-open">Контакты</a>
+						<a href="#news" class="footer__link">Новости</a>
+						<a href="#" class="attention-open">FAQ</a>
+						<a href="#" class="attention-open">Реклама</a>
+						<a href="#" class="attention-open">Соглашение</a>
+						<a href="#" class="attention-open">Регистрация</a>
+						<a href="#services"> Услуги</a>
 					</div>
 					<a href="tel:+7495222222" class="footer__number"> <span>+7</span> (495) 22-22-22</a>
 				</div>
 				<div class="footer__row footer__row-copy">
 					<div class="footer__copy">Все права защищены © 2014</div>
-					<div class="footer__feedback"> <a href=""> Обратная связь</a></div>
+					<div class="footer__feedback"> <a href="#"> Обратная связь</a></div>
 				</div>
 			</div>
 		</footer>
@@ -602,7 +619,7 @@
 				<div class="bet__card">
 					<div class="bet__galery">
 						<a href="#" class="bet__image">
-							<img src="img/popular/1480684.jpg" alt="">
+							<img src="dist/img/popular/1480684.jpg" alt="">
 						</a>
 						<div class="bet__timer timer-box">
 							До окончания: <span>00</span>:<span>00</span>:<span>00</span>:<span>00</span>
@@ -643,6 +660,7 @@
 				<div class="attention__text">
 					<p> Это демонстрационный макет главной страницы сайта.<br>
 						Реализован функционал: </p>
+					<span> - адаптивная верстка;</span>
 					<span> - плавный скролл по элементам навигации;</span>
 					<span>- выпадающие меню;</span>
 					<span>- модальные окна авторизации, подъема ставки, обратной связи, подписки;</span>

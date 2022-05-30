@@ -18,6 +18,7 @@ export const scroll = () => {
         const linkTargetName = target.getAttribute('href').replace('#', '')
         const linkTarget = document.getElementById(linkTargetName)
 
+
         if (linkTarget) {
             animate({
                 duration: 300,
@@ -38,15 +39,20 @@ export const scroll = () => {
     }
 
     document.body.addEventListener('click', (e) => {
+
+
         if (e.target.closest('.arrow')) {
             e.preventDefault()
             goTo(btnScrollUp, 'top')
         }
 
-        if (e.target.classList.contains('menu-header__link') || e.target.matches('.footer__links>a')) {
+        if (e.target.classList.contains('menu-header__link') || e.target.classList.contains('footer__link')) {
+
             e.preventDefault()
             goTo(e.target)
         }
+
+
 
     })
 

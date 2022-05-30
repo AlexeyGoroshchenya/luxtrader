@@ -75,11 +75,5 @@ export const closeModal = (elem, className) => {
     }
 }
 
-const emailTest = (input) => {
-    return !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(input.value)
-}
 
-const nameTest = (input) => {
-    return input.value.match(/[^а-яА-яa-zA-Z\s]/) || input.value.length < 1
-}
 
