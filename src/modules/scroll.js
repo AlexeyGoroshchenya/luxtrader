@@ -46,7 +46,7 @@ export const scroll = () => {
             goTo(btnScrollUp, 'top')
         }
 
-        if (e.target.classList.contains('menu-header__link') || e.target.classList.contains('footer__link')) {
+        if (e.target.classList.contains('menu-header__link') || e.target.classList.contains('footer__link') || e.target.classList.contains('goto-link')) {
 
             e.preventDefault()
             goTo(e.target)
