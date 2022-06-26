@@ -153,6 +153,21 @@ export const sendForm = (form, url) => {
                 })
         } else {
             console.log('данные не валидны');
+            setTimeout(() => {
+
+                if (!document.querySelector('.alert').classList.contains('alert-hidden')) {
+                    closeModal(document.querySelector('.alert'), 'alert-hidden')
+                }
+                if (!document.querySelector('.feedback').classList.contains('feedback-hidden')) {
+                    closeModal(document.querySelector('.feedback'), 'feedback-hidden')
+                }
+                if (!document.querySelector('.alert').classList.contains('alert-hidden')) {
+                    closeModal(document.querySelector('.authorization'), 'authorization-hidden')
+                }
+                statusBlock.textContent = ''
+
+
+            }, 10000)
         }
     }
 

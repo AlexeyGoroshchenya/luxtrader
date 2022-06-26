@@ -269,15 +269,15 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 5px;
-    width: 50px;
+    gap: 10px;
+    width: 35px;
     height: 75px;
     cursor: pointer;
   }
 
 
   .header__menu__btn span {
-    width: 50px;
+    width: 35px;
     height: 3px;
     background-color: #c2a36d;
   }
@@ -1568,7 +1568,7 @@ body {
 }
 
 .authorization__registration {
-  color: #fafafa;
+  color: #bb9c66;
   text-decoration: underline;
   font-size: 20px;
 }
@@ -1705,17 +1705,6 @@ body {
 /*============================================================================*/
 
 
-.attention {}
-
-.attention-hidden {}
-
-.attention__body {}
-
-.attention__text {}
-
-.attention__button {}
-
-.button {}
 
 .attention,
 .alert {
@@ -1738,10 +1727,10 @@ body {
 
 .attention__body,
 .alert__body {
-  width: 70vw;
-  height: 70vh;
+  width: 100vw;
+  height: 100vh;
   background: #191d20;
-  border-radius: 10px;
+  padding-bottom: 50px;
   display: flex;
   flex-direction: column;
   gap: 2vh;
@@ -1754,10 +1743,10 @@ body {
 .attention__text,
 .alert__text {
   background: #191d20;
-  width: 60vw;
+  width: 90vw;
   text-align: center;
   padding: 20px;
-  font-size: 24px;
+  font-size: 20px;
   color: #bb9c66;
 }
 
@@ -1785,7 +1774,7 @@ body {
 
 .attention__button,
 .alert__button {
-  width: 30vw;
+  width: 50vw;
   height: 50px;
   color: #bb9c66;
   font-size: 24px;
@@ -1793,19 +1782,7 @@ body {
   margin-bottom: 20px;
 }
 
-@media (max-width: 767.98px) {
 
-  .attention__body,
-  .alert__body {
-    width: 80vw;
-    height: 80vh;
-  }
-
-  .attention__text,
-  .alert__text {
-    width: 70vw;
-  }
-}
 
 /*============================================================================*/
 
@@ -1830,8 +1807,8 @@ body {
 .bet__body {
   background: #191d20;
   border-radius: 10px;
-  width: 90vw;
-  height: 90vh;
+  width: 95vw;
+  height: 95vh;
   overflow: hidden;
   position: relative;
   color: #fafafa;
@@ -1971,10 +1948,11 @@ body {
 
 .bet__input {
   flex: 1 1 auto;
-  height: 100%;
+  height: 35px;
   border: 1px solid #bb9c66;
   color: #fafafa;
   font-size: 20px;
+  line-height: 1.5;
   background: #191d20;
 }
 
