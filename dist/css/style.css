@@ -1497,7 +1497,8 @@ body {
     padding: 20px;
   }
 
-  .footer a {
+  .footer__links a,
+  .footer__feedback a {
     text-decoration: underline;
   }
 
@@ -1507,7 +1508,16 @@ body {
 
   .footer__number {
     flex: 0 0 auto;
+    font-size: 30px;
+    text-decoration: none;
   }
+
+  .footer__number span {
+    font-size: 25px;
+  }
+
+
+
 }
 
 /*============================================================================*/
